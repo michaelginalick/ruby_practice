@@ -11,8 +11,21 @@ def bubble_sort(array)
 		end 
 		break if swapped == false
 	end	
-	p array
+	array
 end
 
 
-bubble_sort([2,1])
+bubble_sort([2,1,3])
+
+
+
+
+
+
+
+
+
+
+
+
+
