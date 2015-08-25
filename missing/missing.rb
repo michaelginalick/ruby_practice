@@ -1,12 +1,11 @@
 def missing(array)
 	max = array.max
 	range = (1..max).to_a
-	missing = range - array
-	puts missing
+	missing = (range - array)
 end
 
 
-missing([1,0,4,0,6,0,8,9])
+p missing([1,2,4,5,6,7,8,9])
 
 
 

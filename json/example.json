@@ -1,0 +1,44 @@
+require 'json'
+x = {
+	"location_name" => "MPG Parking",
+	"parkwhiz_url" => "http =>//www.parkwhiz.com/p/new-york-parking/100-w-26th-st/?start=1352046600&end=1352061000&pwa=ee51",
+	"address" => "100 W. 26th St.",
+	"city" => "New York",
+	"state" => "NY",
+	"zip" => "10001",
+	"type" => "commercial-garage",
+	"timezone" => "America/New_York",
+	"lat" => 40.744791177613,
+	"lng" => -73.99185425949,
+	"eticket" => 0,
+	"directions" => "Look for the MPG Park 24 Hours sign on the south (right) side of West 26th St. The garage is on West 26th between 6th and 7th Avenues, closer to 6th Ave.",
+	"description" => "Great indoor parking garage just a few blocks from Madison Square Garden.",
+	"recommendations" => 112,
+	"listings" => [
+		{
+			"listing_id" => 43482,
+			"available_spots" => 10,
+			"price" => 20,
+			"www_reserve_url" => "https =>//www.parkwhiz.com/reserve/?id=43482&start=1352046600&end=1352061000&event=74558&pwa=ee51",
+			"api_reserve_url" => "https =>//api.parkwhiz.com/reserve/?id=43482&start=1352046600&end=1352061000&event=74558&pwa=ee51",
+			"start" => 1352046600,
+			"end" => 1352061000,
+			"notes" => "Upon arrival, please show the ParkWhiz parking pass to the attendant for validation.",
+			"valet" => 1,
+			"indoor" => 1,
+			"shuttle" => 0,
+			"tailgate" => 0,
+			"security" => 0,
+			"restroom" => 0,
+			"attended" => 1,
+			"rv" => 0,
+			"obstructed" => 0,
+			"venue_name" => "Madison Square Garden",
+			"event_name" => "Philadelphia 76ers at New York Knicks"
+		},
+	]
+}
+
+
+y = x.to_s
+p = JSON.parse(y)

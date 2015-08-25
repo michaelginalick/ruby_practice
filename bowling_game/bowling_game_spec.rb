@@ -1,8 +1,5 @@
 require_relative 'bowling_game'
 
-
-
-
 describe "Game" do
 
 	 let (:g) {g = Game.new}

@@ -2,19 +2,20 @@ def finonacci(n)
 	return 0 if n == 0
 	return 1 if n == 1
 
-		first_prev = 1
-		second_prev = 0
-		sum = 0
+	first_prev = 1
+	second = 0
+	sum = 0
 
-		(n-1).times do
-			sum = first_prev + second_prev
-			second_prev = first_prev
-			first_prev = sum
-		end
-		return sum
+	(n-1).times do
+		sum = first_prev + second
+		second = first_prev
+		first_prev = sum 
+	end
+	sum
+
 end
 
-p finonacci(5)
+p finonacci(20)
 
 
 def fin_rec(n)
