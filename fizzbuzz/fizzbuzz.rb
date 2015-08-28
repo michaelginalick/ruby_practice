@@ -4,19 +4,18 @@
 
 
 def fizzbuzz(num)
-  (1..10).each do |i|
-    if i % 3 == 0
-      print "#{i} fizz"
-    elsif i % 5 == 0
-      print "#{i} buzz"
-    elsif
-      i % 3 && i % 5 == 0
-      print "#{i} fizzbuzz"
-    else
-      print "#{i} no joy"
+    num.times do |i|
+      
+      if i % 15 == 0
+        puts "fizzbuzz"
+      elsif i % 3 == 0 
+        puts "fizz"
+      elsif i % 5 == 0
+        puts "buzz"
+      else
+        puts "num"
+      end
     end
-  end
-
 end
 
 fizzbuzz(100)
