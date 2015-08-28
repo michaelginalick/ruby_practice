@@ -1,7 +1,7 @@
 def longest_improvement(grades)
  runs = []
  prev = 0
- run = 1
+ run = 0
  grades.each do |g|
   if g >= prev
     run +=1
@@ -11,8 +11,11 @@ def longest_improvement(grades)
   end
   prev = g
  end
+ p runs.max
 end
 
+
+longest_improvement([12, 9, 75, 56, 76, 98, 99, 43])
 
 
 
